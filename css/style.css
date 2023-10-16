@@ -1,0 +1,1189 @@
+/* Global */
+* {
+    font-family: Montserrat;
+}
+.custom-btn {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 10px 14px;
+    text-decoration: unset;
+    height: 40px;
+    display: inline-block;
+}
+
+
+/* Custom navbar */
+.custom-navbar .navbar-brand {
+    padding: 0!important;
+    margin-right: 53px;
+}
+.custom-navbar .navbar-nav {
+    gap: 36px;
+}
+.custom-navbar .navbar-nav .nav-link {
+    color: #333;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0!important;
+}
+.custom-navbar .unset-flex-grow{
+    flex-grow: unset!important;
+}
+
+/* Heading */
+#heading {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 760px;
+    background-color: #F9F9F9;
+    position: relative;
+    padding: 0 82px 66px 82px;
+    background-image: url("../img/Ellipse27.png"), url("../img/Ellipse25.png");
+    background-position: left top 128px , right top 123px;
+    background-repeat: no-repeat, no-repeat;
+}
+#heading::before,
+#heading::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 100%;
+}
+#heading::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    border-radius: 50px 0 0 0;
+}
+#heading::before {
+    left: 0;
+    background-color: #F9F9F9;
+    background-image: url("../img/Ellipse27.png");
+    background-position: left top 187px;
+    background-repeat: no-repeat;
+}
+
+#heading::after {
+    right: 0;
+    background-color: #FFD900;
+    background-image: url("../img/Ellipse28.png");
+    background-position:right top 123px;
+    background-repeat: no-repeat;
+}
+
+
+
+#heading .heading-content {
+    padding-top: 203px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+#heading .title-and-countdown{
+    display: flex;
+    flex-wrap: wrap;
+}
+#heading .heading-title{
+    color: #333;
+    font-family: Libre Baskerville;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 437px;
+    width: 437px;
+    margin-bottom: 26px;
+    margin-right: 74px;
+}
+.pink{
+    color: #DD71C6;
+    font-family: inherit;
+}
+#heading .heading-spots {
+    display: none;
+}
+#heading .heading-text{
+    color: #333;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    max-width: 459px;
+    margin-bottom: 26px;
+}
+#heading .heading-button{
+    color: #FFF;
+    background-color: #DD71C6;
+    width: max-content;
+}
+#heading #countdown {
+    border-radius: 50px;
+    background: linear-gradient(108deg, rgba(255, 255, 255, 0.51) 9.7%, rgba(255, 255, 255, 0.49) 88.76%);
+    backdrop-filter: blur(33.5px);
+    padding: 41px 36px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+#heading #countdown .countdown-title {
+    color: #333;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.4%;
+    margin-bottom: 53px;
+}
+#heading #countdown .countdown-counts {
+    display: flex;
+    gap: 39px;
+    padding: 0 6px;
+}
+#heading #countdown .countdown-counts .countdown-count{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+#heading #countdown .countdown-counts .countdown-count .countdown-count-title{
+    color: #0083D3;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 177.9%;
+    letter-spacing: 5.85px;
+    text-transform: uppercase;
+}
+#heading #countdown .countdown-counts .countdown-count .countdown-count-number{
+    color: #333;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 177.9%;
+}
+
+
+#cards-bg {
+    background-color: #DD71C6;
+    background-image: url("../img/Ellipse32.png"), url("../img/Ellipse16.png");
+    background-position: left center, right center;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 99px 0;
+}
+#cards-bg .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    margin-bottom: 68px;
+}
+#cards-bg .card-pair {
+    display: flex;
+    gap: 48px;
+}
+#cards-bg .cards .card {
+    width: 249px;
+    height: 264px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.03);
+    padding: 16px;
+}
+#cards-bg .cards .card .card-icon{
+    width: 47px;
+    height: 47px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+#cards-bg .cards .card .card-number{
+    color: #333;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 177.9%;
+    margin-bottom: 15px;
+}
+#cards-bg .cards .card .card-number .gray-plus{
+    color: #C4C4C4;
+    margin-left: 5px;
+}
+#cards-bg .cards .card .card-text{
+    color: #333;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158.4%;
+}
+#cards-bg .cards-button {
+    color: #FFF;
+    background: #FFD900;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Consultation */
+#consultation {
+    background-color: #73C3F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 98px 20px 108px 20px;
+    background-image: url("../img/Ellipse17.png"), url("../img/Ellipse166.png");
+    background-position: left bottom 178px, right top 115px;
+    background-repeat: no-repeat, no-repeat;
+}
+#consultation .consultation-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+#consultation .consultation-content-left {
+    padding-top: 38px;
+}
+#consultation .consultation-question{
+    color: #FFF;
+    font-family: Libre Baskerville;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 15px;
+}
+#consultation .consultation-text{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin-bottom: 54px;
+}
+#consultation .consultation-first .consultation-text {
+    max-width: 388px;
+}
+#consultation .consultation-second .consultation-text {
+    max-width: 403px;
+    margin-bottom: 37px;
+}
+#consultation .consultation-button {
+    background-color: #DD71C6;
+    color: #fff;
+}
+#consultation .consultation-content-right {
+    position: relative;
+    display: inline-flex;
+}
+#consultation .consultation-ellipse-bottom {
+    position: absolute;
+    bottom: 21px;
+    right: -28px;
+    z-index: 3;
+}
+#consultation .consultation-ellipse-top {
+    position: absolute;
+    bottom: 223px;
+    right: -28px;
+    z-index: 1;
+}
+#consultation .consultation-girl {
+    z-index: 2;
+}
+#consultation .consultation-ring {
+    position: absolute;
+    right: -89px;
+    top: 106px;
+}
+
+
+/* Appointment */
+#appointment {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    padding-top: 89px;
+}
+#appointment .appointment-header{
+    color: #333;
+    text-align: center;
+    font-family: Libre Baskerville;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+#appointment .appointment-text {
+    color: #333;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+#appointment .appointment-text-mobile{
+    display: none;
+}
+#appointment .appointment-text:nth-child(3){
+    margin-bottom: 34px;
+}
+#appointment .appointment-button {
+    background-color: #DD71C6;
+    color: #fff;
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+#appointment .appointment-img {
+    width: max-content;
+    margin: 0 auto;
+}
+#appointment .appointment-img-mobile {
+    display: none;
+}
+
+
+/* Free consultation */
+#free-consultation {
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    padding: 102px 0 90px 0;
+
+    background-image: url("../img/Ellipse277.png"), url("../img/Ellipse288.png"), url("../img/Ellipse29.png");
+    background-position: left top 192px, right 111px top 31px, right 232px bottom 182px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+#free-consultation .free-consultation-header {
+    color: #333;
+    text-align: center;
+    font-family: Libre Baskerville;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 64px;
+}
+#free-consultation .free-consultation-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-bottom: 88px;
+}
+#free-consultation .free-consultation-card {
+    width: 447px;
+    height: 391px;
+    padding: 28px 24px 0 24px;
+    border-radius: 20px;
+    background: #FFF;
+}
+#free-consultation .free-consultation-card-header {
+    color: #0083D3;
+    text-align: center;
+    font-family: Libre Baskerville;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 172.5%;
+    margin: 0;
+}
+#free-consultation .free-consultation-card hr {
+    color: #0083D3;
+    margin: 39px 0;
+}
+#free-consultation .free-consultation-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#free-consultation .free-consultation-card-list-item {
+    color: #333;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 172.5%;
+}
+#free-consultation .free-consultation-button {
+    color: #fff;
+    background-color: #DD71C6;
+    margin: 0 auto;
+    display: block;
+    width: max-content;
+}
+
+/* Frequently Asked Questions */
+#faq {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 98px 20px 106px 20px;
+    background-image: url("../img/Ellipse33.png"), url("../img/Ellipse34.png"), url("../img/Ellipse35.png");
+    background-position: left bottom 308px, right 61px top 147px, right 206px bottom 271px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+#faq .faq-content {
+    width: 100%;
+    max-width: 1135px;
+}
+#faq .faq-header {
+    color: #333;
+    font-family: Libre Baskerville;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 64px;
+}
+#faq #faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 83px;
+}
+#faq #faq-accordion .accordion-item {
+    border-radius: 20px;
+    background-color: #F9F9F9;
+    border: unset;
+}
+#faq #faq-accordion .accordion-item .accordion-button {
+    border-radius: 20px;
+    background-color: #F9F9F9;
+    border: unset;
+    padding: 15px 55px 15px 20px;
+    color: #333;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 213%;
+}
+#faq #faq-accordion .accordion-item .accordion-button::after {
+    background-image: url("../img/accordion-arrow.svg");
+    width: 26px;
+    height: 16px;
+    background-size: auto;
+}
+#faq .faq-button {
+    color: #fff;
+    background-color: #DD71C6;
+    margin: 0 auto;
+    display: block;
+    width: max-content;
+}
+
+
+/* Footer */
+#footer {
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 105px 20px 33px 20px;
+    background-image: url("../img/Ellipse26.png"), url("../img/Ellipse25.png");
+    background-position: left 80px bottom 160px, right bottom 57px;
+    background-repeat: no-repeat, no-repeat;
+}
+#footer .footer-top-content {
+    display: flex;
+    justify-content: center;
+    gap: 270px;
+    margin-bottom: 99px;
+}
+#footer .footer-logo {
+    margin-bottom: 33px;
+}
+#footer .company-text {
+    color: #333;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    max-width: 443px;
+    margin-bottom: 45px;
+}
+#footer .company-info {
+    color: #333;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 27px;
+}
+#footer .company-info-img {
+    margin-right: 9px;
+}
+#footer .company-info:last-of-type {
+    margin-bottom: 0;
+}
+#footer .footer-top-right {
+    display: flex;
+    gap: 50px;
+}
+#footer .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#footer .footer-nav-header {
+    color: #333;
+    font-family: Libre Baskerville;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 25px;
+}
+#footer .footer-nav-item {
+    color: #333;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-decoration: unset;
+}
+#footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+#footer .copyright-text {
+    color: #333;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+}
+
+
+/* Media queries */
+@media(max-width: 1345px) {
+    #consultation {
+        background-image: url("../img/Ellipse166.png");
+        background-position: right top 115px;
+        background-repeat: no-repeat;
+    }
+    #footer .footer-top-content {
+        gap: 100px;
+    }
+}
+@media(max-width: 1200px) {
+    #cards-bg {
+        padding: 43px 20px;
+    }
+    #cards-bg .cards {
+        gap: 24px;
+        margin-bottom: 31px;
+        justify-content: center;
+    }
+    #cards-bg .card-pair {
+        gap: 24px;
+    }
+    #cards-bg .cards .card {
+        width: 146px;
+        height: 215px;
+    }
+    #cards-bg .cards .card .card-icon {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 6px;
+    }
+    #cards-bg .cards .card .card-number {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+    #cards-bg .cards .card .card-text {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 992px) {
+    .custom-navbar {
+        padding: 22px 58px 10px 70px!important;
+    }
+    .custom-navbar .navbar-toggler-icon {
+        width: 25px;
+        height: 18px;
+    }
+    #heading {
+        background-color: #fff;
+        padding-bottom: 66px;
+    }
+    #heading::before,
+    #heading::after {
+        content: "";
+        position: absolute;
+        width: 48%;
+        height: 100%;
+    }
+    #heading::after {
+        content: "";
+        position: absolute;
+        width: 52%;
+        height: 100%;
+        border-radius: 50px 0 0 0;
+    }
+    #heading::before {
+        background-color: #fff;
+        background-image: url("../img/Ellipse31-tablet.png");
+        background-position: left bottom 248px;
+        background-repeat: no-repeat;
+    }
+    #heading::after {
+        background-color: #FFD900;
+        background-image: url("../img/Ellipse28-tablet.png"), url("../img/Ellipse29-tablet.png");
+        background-position: right top 23px, right 112px bottom 154px;
+        background-repeat: no-repeat;
+    }
+    
+    #heading .heading-content {
+        padding-top: 34px;
+    }
+    #heading .heading-title {
+        color: #333;
+        font-family: Libre Baskerville;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin-bottom: 38px;
+    }
+    #heading #countdown {
+        margin: 0 auto 58px auto;
+    }
+    #heading .heading-spots {
+        display: block;
+        width: 100%;
+        margin: 0px auto 39px auto;
+        color: #333;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 158.4%;
+    }
+    #heading .heading-button {
+        margin: 0 auto;
+    }
+    #heading #countdown {
+        padding: 37px 36px;
+        border-radius: 30px;
+        background: linear-gradient(108deg, rgba(255, 255, 255, 0.51) 9.7%, rgba(255, 255, 255, 0.49) 88.76%);
+        box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+        backdrop-filter: blur(20px);
+        margin-bottom: 58px;
+    }
+    #heading #countdown .countdown-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    #heading #countdown .countdown-counts {
+        gap: 15px;
+    }
+    #heading #countdown .countdown-counts .countdown-count {
+        gap: 19px;
+    }
+    #heading #countdown .countdown-counts .countdown-count .countdown-count-title {
+        font-size: 12px;
+        letter-spacing: 3.9px;
+    }
+    #heading #countdown .countdown-counts .countdown-count .countdown-count-number {
+        font-size: 36px;
+    }
+    #heading .heading-text {
+        margin-bottom: 22px;
+    }
+
+
+    #cards-bg {
+        background-image: url("../img/Ellipse16-tablet.svg");
+        background-position: right bottom 46px;
+        background-repeat: no-repeat;
+    }
+
+    #consultation {
+        padding: 54px 15px 69px 15px;
+        background-image:  url("../img/Ellipse17-tablet.png"), url("../img/Ellipse166-tablet.png");
+        background-position: left bottom 288px, right top 180px;
+        background-repeat: no-repeat;
+    }
+    #consultation .consultation-content {
+        gap: 78px;
+    }
+    #consultation .consultation-content-left {
+        padding: 0;
+    }
+    #consultation .consultation-question {
+        margin-bottom: 32px;
+    }
+    #consultation .consultation-second .consultation-text {
+        margin-bottom: 32px;
+    }
+    #consultation .consultation-first .consultation-text, #consultation .consultation-second .consultation-text {
+        max-width: 440px;
+    }
+    #consultation .consultation-text {
+        margin-bottom: 32px;
+    }
+    #consultation .consultation-button {
+        margin: 0 auto;
+        display: block;
+        width: max-content;
+    }
+    #consultation .consultation-girl {
+        width: 373px;
+        height: auto;
+    }
+    #consultation .consultation-ellipse-bottom {
+        width: 328px;
+        height: auto;
+        right: -20px;
+        bottom: 17px;
+    }
+    #consultation .consultation-ellipse-top {
+        width: 328px;
+        height: auto;
+        bottom: 181px;
+        right: -20px;
+    }
+    #consultation .consultation-ring {
+        right: -65px;
+        top: -12px;
+    }
+    #consultation .consultation-content-right {
+        margin-right: 120px;
+    }
+
+    #appointment {
+        padding: 77px 0 65px 0;
+        background-image: url("../img/Ellipse32-tablet.png");
+        background-position: right top 43px;
+        background-repeat: no-repeat;
+    }
+    #appointment .appointment-header {
+        margin-bottom: 64px;
+    }
+    #appointment .appointment-text {
+        max-width: 440px;
+        margin-bottom: 44px;
+        text-align: left;
+    }
+    #appointment .appointment-text-desktop, #appointment .appointment-img-desktop {
+        display: none;
+    }
+    #appointment .appointment-text-mobile, #appointment .appointment-img-mobile {
+        display: block;
+        line-height: 169.5%;
+    }
+    #appointment .appointment-img {
+        margin-bottom: 44px;
+        width: 100%;
+        height: auto;
+    }
+    #appointment .appointment-button {
+        margin-bottom: 0;
+    }
+
+    #free-consultation {
+        padding: 59px 0 97px 0;
+        background-image: url("../img/Ellipse36-tablet.png"), url("../img/Ellipse37-tablet.png"), url("../img/Ellipse38-tablet.png");
+        background-position: left top 69px, right top 461px, left bottom 92px;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+    }
+    #free-consultation .free-consultation-header {
+        max-width: 437px;
+        margin: 0 auto 44px auto;
+    }
+    #free-consultation .free-consultation-cards {
+        justify-content: center;
+        gap: 44px;
+        margin-bottom: 44px;
+    }
+    #free-consultation .free-consultation-card {
+        width: 440px;
+        height: 363px;
+        padding: 44px 80px 0 80px;
+        border-radius: 20px;
+        background: #FFF;
+    }
+    #free-consultation .free-consultation-card hr {
+        margin: 17px 0;
+    }
+    #free-consultation .free-consultation-card-list {
+        gap: 20px;
+    }
+    #free-consultation .free-consultation-card-list-item {
+        font-size: 14px;
+    }
+
+    #faq {
+        padding: 65px 20px 66px 20px;
+        background-image: none;
+    }
+    #faq .faq-header {
+        margin-bottom: 44px;
+    }
+    #faq .faq-content {
+        max-width: 439px;
+    }
+    #faq #faq-accordion {
+        gap: 12px;
+        margin-bottom: 44px;
+    }
+    #faq #faq-accordion .accordion-item .accordion-button::after {
+        width: 14px;
+        height: 8px;
+        background-image: url("../img/accordion-arrow-tablet.svg");
+    }
+    #faq #faq-accordion .accordion-item .accordion-button {
+        padding: 4px 13px 4px 8px;
+        font-weight: 400;
+        line-height: 188%;
+        border-radius: 12px;
+        display: flex;
+        gap: 12px;
+    }
+
+    #footer {
+        align-items: flex-start;
+        padding: 44px 82px 42px 82px;
+        background-image:  url("../img/Ellipse26-tablet.png"), url("../img/Ellipse39-tablet.png");
+        background-position: left 109px top 130px, right 18px bottom 22px;
+        background-repeat: no-repeat, no-repeat;
+    }
+    #footer .footer-top {
+        width: 100%;
+    }
+    #footer .footer-top-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 62px;
+    }
+    #footer .footer-logo {
+        margin-bottom: 35px;
+    }
+    #footer .company-text {
+        margin-bottom: 38px;
+    }
+    #footer .company-info {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 38px;
+    }
+    #footer .company-info-text {
+        display: inline-flex;
+        flex-direction: column;
+        max-width: 227px;
+    }
+    #footer .company-info-img {
+        margin-top: 3px;
+        margin-right: 12px;
+    }
+    #footer .footer-top-right {
+        gap: 33px;
+    }
+    #footer .footer-nav-header {
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+    #footer .footer-bottom {
+        gap: 20px;
+    }
+}
+
+@media(max-width: 700px) {
+    /* #cards-bg .cards {
+        flex-direction: column;
+    } */
+}
+
+@media(max-width: 576px) {
+    .custom-navbar {
+        padding: 18px 0px 10px 8px!important;
+    }
+    .custom-navbar .navbar-brand {
+        margin-right: 0;
+    }
+    .custom-navbar .navbar-brand img{
+        width: 88px;
+        height: auto;
+    }
+    #heading {
+        padding-bottom: 42px;
+    }
+    #heading::before {
+        width: 49%;
+        background-image: unset;
+    }
+    #heading::after {
+        width: 51%;
+        background-image: url("../img/Ellipse28-mobile.png");
+        background-position: right top 151px;
+        background-repeat: no-repeat;
+    }
+    #heading .heading-title {
+        max-width: 281px;
+        color: #333;
+        text-align: center;
+        font-size: 30px;
+        line-height: 160%;
+        margin: 0 auto 19px auto;
+    }
+    #heading .heading-content {
+        padding-top: 102px;
+    }
+    #heading .heading-spots {
+        font-size: 12px;
+        margin-bottom: 19px;
+    }
+    #heading #countdown .countdown-title {
+        font-size: 12px;
+    }
+    #heading #countdown .countdown-counts {
+        padding: 0;
+    }
+    #heading #countdown .countdown-counts .countdown-count .countdown-count-title {
+        font-size: 8px;
+        letter-spacing: 2.6px;
+    }
+    #heading #countdown .countdown-counts .countdown-count .countdown-count-number {
+        font-size: 18px;
+    }
+    #heading #countdown {
+        padding: 28px 23px;
+        margin: 0 auto 29px auto;
+    }
+    #heading .heading-text {
+        margin: 0 auto 43px auto;
+    }
+
+    #cards-bg {
+        background-image: url("../img/Ellipse32-mobile.png"), url("../img/Ellipse16-mobile.png");
+        background-position: left bottom 118px, right top 119px;
+        background-repeat: no-repeat, no-repeat;
+    }
+    #cards-bg .cards .card {
+        width: 134px;
+        height: 157px;
+        padding: 20px 5px 10px 5px;
+    }
+    #cards-bg .cards .card .card-number {
+        font-size: 18px;
+    }
+    #cards-bg .cards .card .card-text {
+        font-size: 12px;
+    }
+
+    #consultation {
+        padding: 74px 20px 80px 20px;
+        background-image: url("../img/Ellipse166-mobile.png");
+        background-position: right top 54px;
+        background-repeat: no-repeat;
+    }
+    #consultation .consultation-question {
+        font-size: 24px;
+        margin-bottom: 23px;
+        max-width: 281px;
+    }
+    #consultation .consultation-second .consultation-question {
+        margin-bottom: 15px;
+    }
+    #consultation .consultation-text {
+        font-size: 14px;
+    }
+    #consultation .consultation-text {
+        margin-bottom: 42px;
+    }
+    #consultation .consultation-second .consultation-text {
+        margin-bottom: 28px;
+    }
+    #consultation .consultation-first .consultation-text, #consultation .consultation-second .consultation-text {
+        max-width: 281px;
+    }
+    #consultation .consultation-content {
+        gap: 62px;
+    }
+    #consultation .consultation-girl {
+        width: 274px;
+        height: auto;
+    }
+    #consultation .consultation-ellipse-top {
+        width: 241px;
+        height: auto;
+        bottom: 131px;
+        right: -18px;
+    }
+    #consultation .consultation-ellipse-bottom {
+        width: 241px;
+        height: auto;
+        bottom: 11px;
+        right: -18px;
+    }
+    #consultation .consultation-content-right {
+        margin-right: 40px;
+    }
+    #consultation .consultation-ring {
+        right: -47px;
+        top: -9px;
+    }
+
+    #appointment {
+        padding: 46px 0 62px 0;
+        background-image: url("../img/Ellipse31-mobile.png");
+        background-position: right top 75px;
+        background-repeat: no-repeat;
+    }
+    #appointment .appointment-header {
+        font-size: 24px;
+        margin-bottom: 38px;
+    }
+    #appointment .appointment-text {
+        max-width: 281px;
+        margin-bottom: 59px;
+    }
+    #appointment .appointment-img {
+        margin-bottom: 62px;
+    }
+    
+    #free-consultation {
+        padding: 39px 0 71px 0;
+        background-image: url("../img/Ellipse36-mobile.png"), url("../img/Ellipse37-mobile.png");
+        background-position: left top 14px, right top 84px;
+        background-repeat: no-repeat, no-repeat;
+    }
+    #free-consultation .free-consultation-header {
+        max-width: 281px;
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 51px;
+    }
+    #free-consultation .free-consultation-card {
+        width: 281px;
+        height: 295px;
+        padding: 12px 3px 0 3px;
+    }
+    #free-consultation .free-consultation-card-header {
+        font-size: 18px;
+    }
+    #free-consultation .free-consultation-card hr {
+        margin: 17px 22.5px;
+    }
+    #free-consultation .free-consultation-cards {
+        gap: 39px;
+        margin-bottom: 53px;
+    }
+
+    #faq {
+        padding: 62px 20px 19px 47px;
+        background-image: url("../img/Ellipse38-mobile.png");
+        background-position: right top 15px;
+        background-repeat: no-repeat;
+    }
+    #faq .faq-header {
+        font-size: 24px;
+        max-width: 281px;
+        margin-bottom: 62px;
+    }
+    #faq #faq-accordion .accordion-item .accordion-button {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    #footer {
+        padding: 65px 20px 26px 20px;
+        background-image: url("../img/Ellipse26-mobile.png");
+        background-position: right bottom 474px;
+        background-repeat: no-repeat;
+    }
+    #footer .company-text {
+        font-size: 14px;
+        margin-bottom: 43px;
+    }
+    #footer .company-info {
+        font-size: 14px;
+        margin-bottom: 33px;
+    }
+    #footer .footer-top-content {
+        gap: 38px;
+        margin-bottom: 48px;
+    }
+    #footer .footer-top-right {
+        flex-direction: column;
+        gap: 42px;
+    }
+    #footer .footer-nav-header {
+        margin-bottom: -2px;
+    }
+    #footer .footer-nav-item {
+        font-size: 14px;
+    }
+    #footer .footer-nav {
+        gap: 24px;
+    }
+    #footer .footer-bottom {
+        flex-direction: column;
+        gap: 24px;
+    }
+    #footer .copyright-text {
+        max-width: 253px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    #consultation {
+        padding: 74px 15px 80px 15px;
+    }
+    #consultation .consultation-content-right {
+        margin-right: 0;
+    }
+    #consultation .consultation-girl {
+        width: 200px;
+        height: auto;
+    }
+    #consultation .consultation-ellipse-top {
+        bottom: 123px;
+        right: -28px;
+    }
+    #consultation .consultation-ellipse-bottom {
+        bottom: 3px;
+        right: -28px;
+    }
+    #consultation .consultation-ring {
+        display: none;
+    }
+}
